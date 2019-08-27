@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rm -rf ./dist && tsc",
     "lint": "tslint --project tsconfig.json",
-    "start": "functions-framework"
+    "start": "functions-framework --target"
   },
   "husky": {
     "hooks": {
