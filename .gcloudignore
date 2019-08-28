@@ -22,3 +22,5 @@ tsconfig.json
 tests/
 test/
 *.test.ts
+*.test.js
+scripts/
