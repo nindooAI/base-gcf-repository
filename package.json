@@ -8,14 +8,15 @@
     "lint": "tslint --project tsconfig.json",
     "prestart": "npm run build",
     "start": "functions-framework --target",
-    "deploy:single": "./scripts/deploy-single.sh",
-    "deploy": "./scripts/deploy-all.sh"
+    "deploy:single": "npm run build && ./scripts/deploy-single.sh",
+    "deploy": "npm run build && ./scripts/deploy-all.sh"
   },
   "functionConfig": {
     "display-name": {
       "trigger": {
         "type": "trigger-http"
-      }
+      },
+      "methods": ["GET"]
     }
   },
   "husky": {
