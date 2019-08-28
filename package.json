@@ -7,7 +7,16 @@
     "build": "tsc",
     "lint": "tslint --project tsconfig.json",
     "prestart": "npm run build",
-    "start": "functions-framework --target"
+    "start": "functions-framework --target",
+    "deploy:single": "./scripts/deploy-single.sh",
+    "deploy": "./scripts/deploy-all.sh"
+  },
+  "functionConfig": {
+    "display-name": {
+      "trigger": {
+        "type": "trigger-http"
+      }
+    }
   },
   "husky": {
     "hooks": {
