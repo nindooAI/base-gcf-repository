@@ -19,3 +19,6 @@ tsconfig.json
 *.sample
 .nvmrc
 *.md
+tests/
+test/
+*.test.ts
