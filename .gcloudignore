@@ -14,3 +14,8 @@
 .gitignore
 node_modules
 *.ts
+tsconfig.json
+*.yaml
+*.sample
+.nvmrc
+*.md

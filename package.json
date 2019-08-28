@@ -2,7 +2,7 @@
   "name": "dignify-backend",
   "version": "1.0.0",
   "description": "Serverless backend for Dignify",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "lint": "tslint --project tsconfig.json",
