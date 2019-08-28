@@ -1,7 +1,7 @@
 {
-  "name": "dignify-backend",
+  "name": "base-gcf-repository",
   "version": "1.0.0",
-  "description": "Serverless backend for Dignify",
+  "description": "Serverless backend for GCF",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -16,21 +16,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nindooAI/dignify-backend.git"
+    "url": "git+https://github.com/nindooAI/base-gcf-repository.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nindooAI/dignify-backend/issues"
+    "url": "https://github.com/nindooAI/base-gcf-repository/issues"
   },
-  "homepage": "https://github.com/nindooAI/dignify-backend#readme",
+  "homepage": "https://github.com/nindooAI/base-gcf-repository#readme",
   "devDependencies": {
     "@google-cloud/functions-framework": "^1.2.1",
     "@types/express": "^4.17.1",
     "@types/glob": "^7.1.1",
-    "@types/jsonwebtoken": "^8.3.3",
-    "@types/mongodb": "^3.3.1",
     "@types/node": "^12.7.2",
     "husky": "^3.0.4",
     "tslint": "^5.19.0",
@@ -39,8 +37,6 @@
     "typescript": "^3.5.3"
   },
   "dependencies": {
-    "glob": "^7.1.4",
-    "jsonwebtoken": "^8.5.1",
-    "mongodb": "^3.3.1"
+    "glob": "^7.1.4"
   }
 }
