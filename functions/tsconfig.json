@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "incremental": true,
-    "target": "es2015",
+    "incremental": false,
+    "target": "es6",
     "module": "commonjs",
-    "lib": ["es6", "es2017", "es2015.promise", "es2015.iterable", "es2015.proxy", "dom", "scripthost"],
-    "declaration": true,
+    "declaration": false,
     "sourceMap": true,
-    "outDir": "dist",
+    "outDir": ".",
+    "rootDir": ".",
     "removeComments": true,
+    "typeRoots": ["node_modules/@types"],
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -20,5 +21,12 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-  }
+  },
+  "filesGlob": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compileOnSave": false
 }
