@@ -2,7 +2,7 @@ import glob from 'glob'
 import { dirname } from 'path'
 import { Request, Response } from 'express'
 const config = require('../package.json')
-const functionFiles = glob.sync(`${__dirname}/!(dist)/*.js`)
+const functionFiles = glob.sync(`${__dirname}/functions/**/*.js`)
 
 type Verb = 'GET' | 'POST' | 'PATCH' | 'PUT' | 'DELETE'
 interface FunctionConfig {

@@ -4,11 +4,11 @@
 
 ## Standards
 
-1. Every function must reside within the `src` folder
+1. Every function must reside within the `src/functions` folder
 2. Every function must have its own folder
-3. The folder name will be the display name of the function
-4. Every folder must contain exactly one `.ts` function file
-5. The function file name must be equal to the exported function within that same file
+   1. The folder name will be the display name of the function
+3. Every folder must contain exactly one `.ts` function file
+4. The function file name must be equal to the exported function within that same file
 
 ## Running locally
 
