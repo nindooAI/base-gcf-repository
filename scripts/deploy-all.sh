@@ -49,7 +49,7 @@ for dirName in $(node -pe "require('fs').readdirSync('$PARENT_DIR/src/functions'
   gcloud functions deploy $DISPLAY_NAME --entry-point=$FUNCTION_NAME --$TRIGGER_NAME --runtime=$RUNTIME_NAME $ENV_VAR
   set -
 
-  counter=$((n+1))
+  n=$((n+1))
   clear
 done
 
