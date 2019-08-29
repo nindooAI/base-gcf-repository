@@ -24,10 +24,10 @@ then
     echo "'node' was not found in PATH"
 fi
 
-for dirName in $(node -pe "require('fs').readdirSync('$PARENT_DIR/src').filter(f => f.split('.').length <= 1).forEach(d => console.log(d));'';"); do
+for dirName in $(node -pe "require('fs').readdirSync('$PARENT_DIR/src/functions').filter(f => f.split('.').length <= 1).forEach(d => console.log(d));'';"); do
   DISPLAY_NAME=$dirName
 
-  for funcName in $(node -pe "require('fs').readdirSync('./src/$DISPLAY_NAME').forEach(d => console.log(d.split('.').shift()));'';"); do
+  for funcName in $(node -pe "require('fs').readdirSync('./src/functions/$DISPLAY_NAME').forEach(d => console.log(d.split('.').shift()));'';"); do
     FUNCTION_NAME=$funcName
   done
 
