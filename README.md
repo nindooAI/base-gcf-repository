@@ -2,6 +2,13 @@
 
 > Base template for GCF functions
 
+## Required dependencies
+
+In order to run these scipts you'll need to have:
+
+- Gcloud SDK installed and authenticated
+- Node v10.x or newer
+
 ## Standards
 
 1. Every function must reside within the `src/functions` folder
