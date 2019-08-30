@@ -1,0 +1,26 @@
+{
+  "New Cloud Function File JS": {
+    "scope": "javascript",
+    "description": "Creates and exports a new base function for GCF",
+    "prefix": "gcf",
+    "body": [
+      "function ${1:${TM_FILENAME_BASE:functionName}} (req, res) {",
+      " $0",
+      "}",
+      "",
+      "exports.$1 = $1"
+    ]
+  },
+  "New Cloud Function File TS": {
+    "scope": "typescript",
+    "description": "Creates and exports a new base function for GCF",
+    "prefix": "gcf",
+    "body": [
+      "import { Request, Response } from 'express'",
+      "",
+      "export function ${1:${TM_FILENAME_BASE:functionName}} (req: Request, res: Response) {",
+      " $0",
+      "}"
+    ]
+  }
+}
