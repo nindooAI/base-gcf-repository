@@ -66,3 +66,25 @@ You can set the triggers and methods for each function by changing the `function
   // ...
 }
 ```
+
+## Helpers
+
+This repository comes with two VSCode snippets. If you open a `js` or `ts` file and type `gcf`, it'll paste the base code for any cloud function:
+
+```ts
+import { Request, Response } from 'express'
+
+export function functionName (req: Request, res: Response) {
+
+}
+```
+
+Or:
+
+```js
+function functionName (req, res) {
+
+}
+
+exports.functionName = functionName
+```
