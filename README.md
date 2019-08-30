@@ -17,6 +17,10 @@ In order to run these scipts you'll need to have:
 3. Every folder must contain exactly one `.ts` function file
 4. The function file name must be equal to the exported function within that same file
 
+### Environment Variables
+
+All environment variables for Cloud Functions are described into one single `envs.yaml` file. This file, if it exists, will automatically be added to all deployed functions.
+
 ## Running locally
 
 ```bash
